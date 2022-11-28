@@ -17,7 +17,7 @@ class func {
     }
   }
 
-  isEven = (number) => number % 2 === 0;
+  isEven(number) { return number % 2 == 0}
 
   gcd(a, b) {
     if (b === 0) {
