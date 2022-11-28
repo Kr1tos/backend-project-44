@@ -21,6 +21,6 @@ const start = (description, game) => {
             return;
         }
     }
-    console.log(`Congratulations, ${name}`);
+    console.log(`\nCongratulations, ${name}`);
 }
 export default start
