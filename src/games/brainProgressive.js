@@ -1,15 +1,15 @@
 import start from '../index.js';
-import func from '../functions.js';
+import { getRandomNumber, gemerateProgression, putMissingValue } from '../functions.js';
 
 const description = 'What number is missing in the progression?';
 const game = () => {
-  const length = func.getRandomNumber(5, 10);
-  const first = func.getRandomNumber(1, 10);
-  const step = func.getRandomNumber(1, 10);
-  const missing = func.getRandomNumber(1, length - 1);
+  const length = getRandomNumber(5, 10);
+  const first = getRandomNumber(1, 10);
+  const step = getRandomNumber(1, 10);
+  const missing = getRandomNumber(1, length - 1);
 
-  const progression = func.gemerateProgression(first, step, length);
-  const quest = func.putMissingValue(missing, progression);
+  const progression = gemerateProgression(first, step, length);
+  const quest = putMissingValue(missing, progression);
   const correctAnsw = String(progression[missing]);
 
   return [quest, correctAnsw];
