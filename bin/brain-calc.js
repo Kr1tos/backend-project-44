@@ -2,4 +2,4 @@
 
 import startGame from '../src/games/brainCalc.js';
 
-startGame()
+startGame();

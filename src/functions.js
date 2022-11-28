@@ -1,9 +1,9 @@
-import {cons, car, cdr} from '@hexlet/pairs';
+import {car, cdr} from '@hexlet/pairs';
 
 class func {
 
     getRandomNumber (min, max){
-        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        let rand = this.min - 0.5 + Math.random() * (this.max - this.min + 1);
         return Math.round(rand);
     };
 
@@ -18,7 +18,7 @@ class func {
         }
     };
 
-    isEven = (number) => number % 2 == 0;
+    isEven = (number) => number % 2 === 0;
 
     gcd(a, b) {
         if (b === 0) {
@@ -44,7 +44,7 @@ class func {
             if (index === missingValue) {
                 newProgression.push('..');
             } else {
-                newProgression.push(progression[index]);
+                newProgression.push(progression[index]);ы
             }
         }
         return newProgression.join(' ');
