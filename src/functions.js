@@ -1,5 +1,6 @@
 import { car, cdr } from '@hexlet/pairs';
 
+// eslint functional/no-class: "error" //
 class Func {
   // eslint-disable-next-line class-methods-use-this
   getRandomNumber(min, max) {
