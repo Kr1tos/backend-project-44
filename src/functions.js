@@ -14,6 +14,8 @@ class func {
         return car(operands) + cdr(operands);
       case '*':
         return car(operands) * cdr(operands);
+      default:
+        return 'Invalid operator';
     }
   }
 
@@ -37,23 +39,25 @@ class func {
     return nums;
   }
 
-  putMissingValue = (missingValue, progression) => {
+  putMissingValue(missingValue, progression) {
     const newProgression = [];
 
     for (let index = 0; index < progression.length; index += 1) {
       if (index === missingValue) {
         newProgression.push('..');
       } else {
-        newProgression.push(progression[index]); 
+        newProgression.push(progression[index]);
       }
     }
     return newProgression.join(' ');
-  };
+  }
 
   isPrime(num) {
+    // eslint-disable-next-line no-plusplus
     for (let i = 2; i < num; i++) { if (num % i === 0) return false; }
     return true;
   }
 }
 
+// eslint-disable-next-line new-cap
 export default new func();
