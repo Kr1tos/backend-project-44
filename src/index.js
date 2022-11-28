@@ -18,6 +18,7 @@ const start = (description, game) => {
             counter-=1
         } else {
             console.log(`'${userAnsw}' is wrong answer ;(. Correct answer was '${correctAnsw}'.`);
+            console.log(`Let's try again, ${name}!`);
             return;
         }
     }
