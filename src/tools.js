@@ -29,7 +29,7 @@ function gcd(a, b) {
   return gcd(b, a % b);
 }
 
-function gemerateProgression(first, step, length) {
+function generateProgression(first, step, length) {
   const nums = [];
   let count = 0;
   while (count !== length) {
@@ -62,5 +62,5 @@ function isPrime(num) {
 }
 
 export {
-  isPrime, putMissingValue, gemerateProgression, gcd, isEven, calculate, getRandomNumber,
+  isPrime, putMissingValue, generateProgression, gcd, isEven, calculate, getRandomNumber,
 };
