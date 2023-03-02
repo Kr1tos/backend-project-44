@@ -1,5 +1,5 @@
 import start from '../index.js';
-import { getRandomNumber, gemerateProgression, putMissingValue } from '../tools.js';
+import { getRandomNumber, generateProgression, putMissingValue } from '../tools.js';
 
 const description = 'What number is missing in the progression?';
 const game = () => {
@@ -8,7 +8,7 @@ const game = () => {
   const step = getRandomNumber(1, 10);
   const missing = getRandomNumber(1, length - 1);
 
-  const progression = gemerateProgression(first, step, length);
+  const progression = generateProgression(first, step, length);
   const quest = putMissingValue(missing, progression);
   const correctAnsw = String(progression[missing]);
 
