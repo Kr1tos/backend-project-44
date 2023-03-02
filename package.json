@@ -1,7 +1,7 @@
 {
-  "name": "@hexlet/code",
+  "name": "Kritos",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/Kr1tos/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Kr1tos/backend-project-44/actions)",
+  "description": "test project hexlet",
   "main": "index.js",
   "type": "module",
   "bin": {

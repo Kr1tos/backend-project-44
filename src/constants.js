@@ -1,10 +1,7 @@
 const items = {
-
   COUNT_ROUNDS: 3,
-
   MAX_NUMBER: 100,
-  MIN_NUMBER: 1,
-
+  MIN_NUMBER: 1
 };
 
-module.exports = items;
+export default items;

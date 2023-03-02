@@ -1,6 +1,6 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import _ from 'lodash';
-import { getRandomNumber, calculate } from '../functions.js';
+import { getRandomNumber, calculate } from '../tools.js';
 import start from '../index.js';
 
 const description = 'What is the result of the expression?';

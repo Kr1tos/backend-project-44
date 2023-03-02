@@ -1,5 +1,5 @@
 import start from '../index.js';
-import { getRandomNumber, gemerateProgression, putMissingValue } from '../functions.js';
+import { getRandomNumber, gemerateProgression, putMissingValue } from '../tools.js';
 
 const description = 'What number is missing in the progression?';
 const game = () => {
